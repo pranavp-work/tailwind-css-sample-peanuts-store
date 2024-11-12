@@ -31,26 +31,34 @@
 
             <!-- Regular Menu (hidden on small screens) -->
             <ul class="hidden md:flex space-x-4">
-                <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
-                <li><a href="#" class="text-white hover:text-gray-200">Products</a></li>
-                <li><a href="#" class="text-white hover:text-gray-200">About Us</a></li>
-                <li><a href="#" class="text-white hover:text-gray-200">Contact</a></li>
+                <li><a href="#home" class="text-white hover:text-gray-200">Home</a></li>
+                <li><a href="#products" class="text-white hover:text-gray-200">Products</a></li>
+                <li><a href="#about" class="text-white hover:text-gray-200">About Us</a></li>
+                <li><a href="#contact" class="text-white hover:text-gray-200">Contact</a></li>
             </ul>
         </div>
 
         <!-- Mobile Menu (hidden by default) -->
         <div id="mobile-menu" class="md:hidden hidden">
             <ul class="flex flex-col space-y-2 mt-4">
-                <li><a href="#" class="block text-white bg-yellow-600 px-4 py-2 rounded">Home</a></li>
-                <li><a href="#" class="block text-white bg-yellow-600 px-4 py-2 rounded">Products</a></li>
-                <li><a href="#" class="block text-white bg-yellow-600 px-4 py-2 rounded">About Us</a></li>
-                <li><a href="#" class="block text-white bg-yellow-600 px-4 py-2 rounded">Contact</a></li>
+                <li><a href="#home" class="block text-white bg-yellow-600 px-4 py-2 rounded">Home</a></li>
+                <li><a href="#products" class="block text-white bg-yellow-600 px-4 py-2 rounded">Products</a></li>
+                <li><a href="#about" class="block text-white bg-yellow-600 px-4 py-2 rounded">About Us</a></li>
+                <li><a href="#contact" class="block text-white bg-yellow-600 px-4 py-2 rounded">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="container mx-auto mt-8">
+
+    <!-- Home Section -->
+    <div id="home" class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Welcome to Peanuts & Snacks!</h1>
+        <p class="text-gray-600 text-center">Your one-stop shop for delicious snacks, peanuts, cashews, and more!</p>
+    </div>
+
+    <!-- Products Section -->
+    <div id="products" class="container mx-auto mt-8">
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Delicious Snacks</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Product Card 1 -->
@@ -75,38 +83,6 @@
                 </div>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Cashews" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Honey Roasted Cashews</h3>
-                    <p class="text-gray-600">Sweet and savory honey-coated cashews.</p>
-                    <span class="text-yellow-500 font-bold">₹150</span>
-                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
-                </div>
-            </div>
-
-
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Cashews" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Honey Roasted Cashews</h3>
-                    <p class="text-gray-600">Sweet and savory honey-coated cashews.</p>
-                    <span class="text-yellow-500 font-bold">₹150</span>
-                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
-                </div>
-            </div>
-
-
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Cashews" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Honey Roasted Cashews</h3>
-                    <p class="text-gray-600">Sweet and savory honey-coated cashews.</p>
-                    <span class="text-yellow-500 font-bold">₹150</span>
-                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
-                </div>
-            </div>
-
             <!-- Product Card 3 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
                 <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
@@ -117,7 +93,125 @@
                     <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
                 </div>
             </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61j28cBVCGL.jpg" alt="Almonds" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Spicy Almond Mix</h3>
+                    <p class="text-gray-600">A mix of spicy almonds for those who love a kick.</p>
+                    <span class="text-yellow-500 font-bold">₹150</span>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Add to Cart</button>
+                </div>
+            </div>
+
+
         </div>
+    </div>
+    
+    <!-- About Us Section -->
+    <div id="about" class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">About Us</h1>
+        <p class="text-gray-600 text-center">We are a passionate team dedicated to bringing you the best and most delicious snacks. Whether you're in the mood for salted peanuts, roasted cashews, or a spicy snack mix, we have you covered!</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact Us</h1>
+        <form class="w-full max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-800">Your Name</label>
+                <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter your name">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-800">Your Email</label>
+                <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter your email">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-800">Your Message</label>
+                <textarea id="message" class="w-full p-3 border border-gray-300 rounded-md" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Send Message</button>
+        </form>
     </div>
 
     <!-- Footer -->
